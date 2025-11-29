@@ -36,7 +36,8 @@
 
 .imageContainer {
   flex: 1;
-  min-width: 0;
+  min-width: 600px;
+  height: auto;
   display: flex;
   justify-content: center;
   align-items: center;
