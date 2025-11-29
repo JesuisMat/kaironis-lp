@@ -1,5 +1,5 @@
 import Navbar from './navbar/Navbar';
-import Hero from './hero/Hero';
+import Hero from './Hero/Hero';
 import Challenge from './challenge/Challenge';
 import Quote from './quote/Quote';
 import Solution from './solution/Solution';
