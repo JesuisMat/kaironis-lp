@@ -1,0 +1,180 @@
+.footer {
+  background: #161616;
+  width: 100vw;
+  position: relative;
+  left: 50%;
+  right: 50%;
+  margin-left: -50vw;
+  margin-right: -50vw;
+}
+
+.container {
+  max-width: 1280px;
+  margin: 0 auto;
+  padding: 40px 80px;
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+  box-sizing: border-box;
+}
+
+.topSection {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 40px;
+  align-items: start;
+}
+
+.column {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  align-items: center;
+  text-align: center;
+}
+
+.columnTitle {
+  font-family: 'Satoshi-Bold';
+  font-size: 21.333px;
+  color: white;
+  margin: 0;
+  white-space: nowrap;
+}
+
+.links {
+  display: flex;
+  flex-direction: column;
+  gap: 13.333px;
+}
+
+.link {
+  font-family: 'Satoshi-Regular';
+  font-size: 13.333px;
+  color: white;
+  text-decoration: none;
+  transition: opacity 0.3s ease;
+}
+
+.link:hover {
+  opacity: 0.7;
+}
+
+.contactInfo {
+  display: flex;
+  flex-direction: column;
+  gap: 6.667px;
+}
+
+.contactItem {
+  display: flex;
+  gap: 7.333px;
+  align-items: center;
+}
+
+.icon {
+  width: 22.667px;
+  height: 22.667px;
+  background: white;
+  border-radius: 6.667px;
+  flex-shrink: 0;
+}
+
+.contactIcon {
+  width: 22.667px;
+  height: 22.667px;
+  object-fit: contain;
+}
+
+.contactText {
+  font-family: 'Satoshi-Regular';
+  font-size: 13.333px;
+  color: white;
+  white-space: nowrap;
+}
+
+.logoSection {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 8px 0;
+  grid-column: 1 / -1;
+}
+.divider {
+  width: 100%;
+  height: 1px;
+  background: white;
+  opacity: 0.12;
+  margin-top: 8px;
+  margin-bottom: 8px;
+}
+.bottomSection {
+  display: flex;
+  gap: 16px;
+  align-items: center;
+  justify-content: center;
+  padding: 12px 0 0 0;
+  flex-wrap: wrap;
+}
+
+.copyright {
+  font-family: 'Instrument Sans';
+  font-size: 12px;
+  color: white;
+  margin: 0;
+  white-space: nowrap;
+  text-align: center;
+}
+
+.legalLinks {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+.legalLink {
+  font-family: 'Instrument Sans';
+  font-size: 12px;
+  color: white;
+  text-decoration: none;
+  transition: opacity 0.3s ease;
+}
+
+.legalLink:hover {
+  opacity: 0.7;
+}
+
+.separator {
+  color: white;
+  font-size: 12px;
+}
+
+@media (max-width: 1024px) {
+  .container {
+    padding: 32px 40px;
+  }
+
+  .topSection {
+    flex-direction: column;
+    gap: 20px;
+    align-items: center;
+  }
+
+  .column {
+    text-align: center;
+  }
+
+  .divider {
+    margin: 12px 0;
+  }
+}
+
+@media (max-width: 768px) {
+  .container {
+    padding: 24px 20px;
+  }
+
+  .bottomSection {
+    flex-direction: column;
+    gap: 8px;
+  }
+}

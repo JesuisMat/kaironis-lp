@@ -1,0 +1,55 @@
+.features {
+  width: 100%;
+  padding: 0 80px 80px 80px;
+  box-sizing: border-box;
+}
+
+.container {
+  display: flex;
+  justify-content: center;
+  gap: 40px;
+  width: 100%;
+}
+
+.featureCard {
+  flex: 1;
+  max-width: 345px;
+  background: rgba(133, 133, 246, 0);
+  border: 3px solid #8585f6;
+  border-radius: 10px;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.featureTitle {
+  font-family: 'Satoshi-Black';
+  font-size: 20px;
+  color: white;
+  margin: 0;
+  line-height: 1.2;
+  height: 27px;
+}
+
+.featureDescription {
+  font-family: 'Satoshi-Regular';
+  font-size: 12px;
+  color: white;
+  margin: 0;
+  line-height: 1.5;
+  text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+}
+
+@media (max-width: 1024px) {
+  .container {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .featureCard {
+    max-width: 100%;
+    width: 100%;
+     gap: 20px;
+  }
+}
