@@ -89,6 +89,11 @@
   background: rgba(245, 245, 245, 0.35);
 }
 
+.ctaButton {
+text-decoration: none;
+color: white;
+}
+
 .illustration {
   width: 586px;
   height: 404px;

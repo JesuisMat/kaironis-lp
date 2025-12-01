@@ -1,16 +1,16 @@
-import { CheckIcon } from '../svgAssets';
-import styles from './discovery.module.css';
-import Image from 'next/image';
+import { CheckIcon } from "../svgAssets";
+import styles from "./discovery.module.css";
+import Image from "next/image";
 
 export default function Discovery() {
   const benefits = [
-    'Une réponse directe aux défis de la santé publique',
-    'Décidez avec des données toujours à jour',
+    "Une réponse directe aux défis de la santé publique",
+    "Décidez avec des données toujours à jour",
     "Accédez à des indicateurs actualisés en temps réel : couvertures vaccinales, passages aux urgences, prévisions d'épidémies.",
     "Simulez l'impact de vos décisions avant de les prendre",
-    'Testez différents scénarios de distribution vaccinale et anticipez leur effet sur la pression hospitalière.',
-    'Expliquez vos choix avec des visuels parlants',
-    "Générez automatiquement des cartographies, des graphiques d'impact et des synthèses accessibles pour la communication publique."
+    "Testez différents scénarios de distribution vaccinale et anticipez leur effet sur la pression hospitalière.",
+    "Expliquez vos choix avec des visuels parlants",
+    "Générez automatiquement des cartographies, des graphiques d'impact et des synthèses accessibles pour la communication publique.",
   ];
 
   return (
@@ -53,13 +53,16 @@ export default function Discovery() {
             </div>
 
             <button className={styles.ctaButton}>
-              Demander une démo
+              <a className={styles.ctaButton}href={process.env.NEXT_PUBLIC_DASHBOARD_URL}>
+                Demander une démo
+              </a>
             </button>
           </div>
         </div>
 
         <p className={styles.footer}>
-          Générez automatiquement des cartographies, des graphiques d'impact et des synthèses accessibles pour la communication publique.
+          Générez automatiquement des cartographies, des graphiques d'impact et
+          des synthèses accessibles pour la communication publique.
         </p>
       </div>
     </section>

@@ -114,6 +114,7 @@
 .ctaButton {
   background: #8585f6;
   border: none;
+  text-decoration: none;
   border-radius: 84px;
   padding: 5px 17px;
   height: 47px;

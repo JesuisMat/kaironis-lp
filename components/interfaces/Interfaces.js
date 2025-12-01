@@ -3,13 +3,13 @@ import styles from './interfaces.module.css';
 export default function Interfaces() {
   const interfaces = [
     {
-      title: 'Une vue essentielle',
-      description: 'claire, immédiate, orientée action — pour les décideurs.',
+      title: 'Une vue experte',
+      description: 'Claire, immédiate et orientée action en se concentrant sur les KPI et le ROI.',
       backgroundClass: styles.essentialBg
     },
     {
-      title: 'Une vue experte',
-      description: 'complète, détaillée, modélisée — pour les analystes.',
+      title: 'Une vue contextualisée',
+      description: 'Conçue pour donner du sens aux données complexes et faciliter la communication.',
       backgroundClass: styles.expertBg
     }
   ];
@@ -24,7 +24,7 @@ export default function Interfaces() {
             une même réalité
           </h2>
           <p className={styles.subtitle}>
-            Explorez les données sources, validez les modèles prédictifs, et{' '}
+            Accédez aux données sources, explorez les modèles prédictifs, et{' '}
             <span className={styles.highlight}>construisez des scénarios d'anticipation</span>.
           </p>
         </div>
@@ -35,7 +35,11 @@ export default function Interfaces() {
               <div className={styles.cardContent}>
                 <h3 className={styles.cardTitle}>{item.title}</h3>
                 <p className={styles.cardDescription}>{item.description}</p>
-                <button className={styles.cardButton}>En savoir plus</button>
+                <button className={styles.cardButton}>
+              <a className={styles.ctaButton}href={process.env.NEXT_PUBLIC_DASHBOARD_URL}>
+               En savoir plus
+              </a>
+                </button>
               </div>
             </div>
           ))}

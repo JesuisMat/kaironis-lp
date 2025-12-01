@@ -21,7 +21,9 @@ export default function Navbar() {
       </div>
 
       <button className={styles.ctaButton}>
-        Découvrir
+      <a className={styles.ctaButton1}href={process.env.NEXT_PUBLIC_DASHBOARD_URL}>
+               Découvrir
+              </a>
       </button>
     </nav>
   );
